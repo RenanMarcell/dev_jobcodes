@@ -229,6 +229,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 18% 140px 18%;
+        min-height: 600px;
         height: 100vh;
     }
 
@@ -265,11 +266,11 @@
         margin-top: -25px;
     }
 
-    #mc_embed_signup_scroll h3 {
+    #mailchimp-form h3 {
         text-align: left;
     }
 
-    #mce-EMAIL {
+    #mailchimp-form .email {
         background-color: transparent;
         padding-left: 50px;
         height: 45px;
@@ -279,7 +280,7 @@
         border-radius: 15px;
     }
 
-    #mce-EMAIL::placeholder {
+    #mailchimp-form .email::placeholder {
         color: white;
         opacity: 1;
     }
