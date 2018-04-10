@@ -1,44 +1,96 @@
-
 @media (max-width: 850px) {
 
     #banner {
-        background-image: url("../img/header.png");
-        display: flex;
-        flex-direction: column;
+        background-image: url("../img/Topo_mobile.jpg");
         background-size: cover;
-        padding: 18px;
-    }
-
-    #banner h1{
-        margin: 10px 5px 0 5px;
-        font-size: 30px;
         color: #ffffff;
-        text-align: center;
-        display: none;
+        text-shadow: 1px 1px 5px #5FA3CC;
+        padding: 45px 0 60px;
     }
 
-    #banner p {
-        margin: 0 5px 0 5px;
-        font-size: 30px;
-        color: #ffffff;
-        text-align: center;
-        opacity: 0.8;
-    }
-
-    #banner a {
-        align-self: center;
-    }
-
-    #botao {
-        color: #5FA3CC;
-        margin: 0;
-        padding: 9px;
-        margin: 30px;
+    .logo-div {
+        display: flex;
+        justify-content: center;
     }
 
     #jobcodes-logo {
         align-self: center;
-        height: 110px;
+        margin-bottom: 60px;
+    }
+
+    .atract-text-div {
+        display: flex;
+        max-width: 100%;
+        padding: 0 40px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .atract-text-div h3 {
+        font-size: 25px;
+        width: 100%;
+        margin: 0 5px 15px;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .atract-text-div p {
+        color: #ffffff;
+        opacity: 0.8;
+        font-size: 19px;
+        font-weight: lighter;
+        margin: 0 5px 15px;
+        text-align: left;
+    }
+
+    .atract-text-div h6 {
+        margin: 0 5px 15px;
+        text-align: left;
+    }
+
+
+    .dividing-line {
+        display: none;
+    }
+
+    .register-form-div {
+        max-width: 100%;
+        padding: 0 45px 0;
+    }
+
+    #mailchimp-form h3 {
+        text-align: left;
+    }
+
+    .mc-field-group input {
+        background-color: transparent;
+        padding-left: 50px;
+        height: 45px;
+        color: white;
+        width: 85%;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .mc-field-group .name {
+        background: url("../img/icon_name.png") no-repeat 9px 7px;
+    }
+
+    .mc-field-group .email {
+        background: url("../img/icon_email.png") no-repeat 8px 8px;
+    }
+
+    .mc-field-group input::placeholder {
+        color: white;
+        opacity: 1;
+    }
+
+    #mc-embedded-subscribe {
+        width: 50%;
+        color: #5FA3CC;
+        border-radius: 15px;
+        font-size: 25px;
+        background-color: white;
     }
 
     body {
@@ -52,131 +104,75 @@
         margin-bottom: 40px;
     }
 
-    .middle-row-title h4 {
-        color: #3eadc1;
+    .middle-row-title h3 {
         text-align: center;
         margin-bottom: 0;
         font-size: 25px;
     }
 
-    .option-display {
-        padding-left: 0;
-    }
-
-    .option-choice-box {
+    #middle-container {
         width: 100%;
-        min-height: 35px;
-        margin-bottom: 30px;
-        display: flex;
-        background-color: #E5E5E5;
-        justify-items: center;
+        padding: 0 45px 0;
     }
 
-    .option-choice-box p {
-        margin: 0 0 0 10px;
-        font-size: 20px;
-        color: #787878;
-        padding: 0;
-        align-self: center;
-        text-align: center;
-    }
-
-
-    .option-choose-box {
-        display: flex;
-        justify-content: space-around;
-    }
-    .choice-box-input {
-        display: flex;
-        width: 100%;
-        justify-self: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .choice-box-input input {
-        width: 25px;
-        height: 25px;
-        margin-left: 1px;
-        align-self: center;
-    }
-
-    .choice-box-input h6 {
-        margin-top: 2px;
-        margin-right: 7px;
-        color: #787878;
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-
-    .option-choose-box {
+    #cards {
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        justify-content: space-around;
-    }
-
-    .choice-box-input {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .choice-box {
-        display: flex;
-        width: 100%;
         justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
-    .choice-box textarea {
-        width: 80%;
-        margin-top: 5px;
+    .card-reason {
+        width: 100%;
+        background-color: white;
+        height: 160px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 15px 15px 40px;
     }
 
-    .final-row {
-        margin: 20px 5px 5px 10px;
+    .card-title-div {
         display: flex;
-        flex-direction: column;
+        justify-content: left;
     }
 
-    .click-advertise {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .click-advertise h1 {
+    .card-title-div h6 {
+        color: black;
+        width: 70%;
+        margin-left: 20px;
+        margin-bottom: 0;
         align-self: center;
-        margin: 10px;
-        color: #3eadc1;
         font-weight: bold;
     }
 
-    .personal-info-and-submit {
+    .card-description-div {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .card-description-div p {
+        font-size: smaller;
+    }
+
+    #second-banner {
+        text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        background-image: url("../img/CTA_desktop.jpg");
+        background-size: cover;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px #5FA3CC;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 
-    .personal-info-and-submit input {
-        align-self: center;
-        width: 80%;
-        margin: 10px;
+    #second-banner button {
+        background-color: white;
+        color: #5FA3CC;
+        width: 75%;
+        border-radius: 15px;
     }
 
-    .personal-info-and-submit button {
-        background-color: #ffcd54;
-        color: #3eadc1;
-        font-weight: bold;
-        border: none;
-    }
-
-    .onSuccess {
-        color: #3eadc1;
-        margin-top: 5px;
-        display: none;
-    }
 
     .rodape {
         display: flex;
@@ -213,16 +209,12 @@
         margin-top: 25px;
     }
 
-    #mc_embed_signup {
-        display: none;
-    }
-
 }
 
 @media (min-width: 851px) {
     #banner {
         text-align: center;
-        background-image: url("../img/header.png");
+        background-image: url("../img/Topo_desktop.jpg");
         background-size: cover;
         color: #ffffff;
         text-shadow: 1px 1px 5px #5FA3CC;
@@ -239,13 +231,12 @@
 
     #jobcodes-logo {
         margin-top: 25px;
-        margin-bottom: 135px;
+        margin-bottom: 145px;
         height: 110px;
     }
 
-    #banner h1 {
+    #banner h3 {
         color: #ffffff;
-        font-size: 30px;
         text-align: left;
         margin-bottom: 15px;
     }
@@ -262,6 +253,10 @@
         text-align: left;
     }
 
+    .atract-text-div {
+        margin-top: -33px
+    }
+
     .dividing-line {
         margin-top: -25px;
     }
@@ -270,23 +265,31 @@
         text-align: left;
     }
 
-    #mailchimp-form .email {
+    .mc-field-group input {
         background-color: transparent;
         padding-left: 50px;
         height: 45px;
         color: white;
         width: 100%;
+        margin-bottom: 20px;
         float: left;
         border-radius: 15px;
     }
 
-    #mailchimp-form .email::placeholder {
+    .mc-field-group .name {
+        background: url("../img/icon_name.png") no-repeat 9px 7px;
+    }
+
+    .mc-field-group .email {
+        background: url("../img/icon_email.png") no-repeat 8px 8px;
+    }
+
+    .mc-field-group input::placeholder {
         color: white;
         opacity: 1;
     }
 
     #mc-embedded-subscribe {
-        margin-top: 20px;
         width: 50%;
         color: #5FA3CC;
         float: left;
@@ -313,11 +316,7 @@
     }
 
     .middle-row-title h3 {
-        color: black;
-    }
-
-    .middle-row-title p {
-        text-align: center;
+        color: #5FA3CC;
     }
 
     #cards {
@@ -332,7 +331,7 @@
         height: 160px;
         border-radius: 15px;
         margin-bottom: 15px;
-        padding: 20px 25px 40px;
+        padding: 15px 15px 40px;
     }
 
     .card-title-div {
@@ -341,14 +340,17 @@
     }
 
     .card-title-div h6 {
+        color: black;
         width: 70%;
-        margin-left: 10px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        align-self: center;
         font-weight: bold;
     }
 
     .card-description-div {
         display: flex;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .card-description-div p {
@@ -359,7 +361,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        background-image: url("../img/header.png");
+        background-image: url("../img/CTA_desktop.jpg");
         background-size: cover;
         color: #ffffff;
         text-shadow: 1px 1px 5px #5FA3CC;
