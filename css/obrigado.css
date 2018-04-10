@@ -1,0 +1,173 @@
+@media (max-width: 850px) {
+
+    #banner {
+        background-image: url("../img/Topo_mobile.jpg");
+        background-size: cover;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px #5FA3CC;
+        padding: 45px 0 60px;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #jobcodes-logo {
+        align-self: center;
+        margin-bottom: 60px;
+    }
+
+    .atract-text-div {
+        display: flex;
+        max-width: 100%;
+        padding: 0 40px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .atract-text-div h3 {
+        font-size: 25px;
+        width: 100%;
+        margin: 0 5px 15px;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .atract-text-div p {
+        color: #ffffff;
+        opacity: 0.8;
+        font-size: 19px;
+        font-weight: lighter;
+        margin: 0 5px 15px;
+        text-align: left;
+    }
+
+    .atract-text-div h6 {
+        margin: 0 5px 15px;
+        text-align: left;
+    }
+
+    .dividing-line {
+        display: none;
+    }
+
+    .register-form-div {
+        max-width: 100%;
+        padding: 0 45px 0;
+    }
+
+    body {
+        background-color: #F3F3F3;
+    }
+
+
+    .rodape {
+        display: flex;
+        background: #565656;
+        color: #fff;
+        list-style: none;
+    }
+
+    .rodape ul {
+        background: #565656;
+        color: #fff;
+        list-style: none;
+    }
+
+    .rodape span {
+        color: #fff;
+    }
+
+    .rodape .icon-facebook-circled {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .rodape .icon-linkedin-circled {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .rodape .rede-social {
+        display: inherit;
+    }
+
+    .rodape .copy {
+        margin-top: 25px;
+    }
+
+}
+
+@media (min-width: 851px) {
+
+    body {
+        margin: 0;
+        background-color: #F3F3F3;
+    }
+
+    #banner {
+        text-align: center;
+        background-image: url("../img/Topo_desktop.jpg");
+        background-size: cover;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px #5FA3CC;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        padding: 30px 30% 0;
+    }
+
+    .logo-div {
+        width: 100%;
+    }
+
+    #jobcodes-logo {
+        margin-top: 25px;
+        margin-bottom: 90px;
+        height: 110px;
+    }
+
+    .logo-div h3 {
+        text-align: left;
+    }
+
+    .logo-div h5 {
+        text-align: left;
+    }
+
+    .rodape {
+        display: flex;
+        background: #565656;
+        color: #fff;
+        list-style: none;
+        height: 60px;
+    }
+
+    .rodape ul {
+        background: #565656;
+        color: #fff;
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+
+    .rodape li {
+        align-self: center;
+    }
+
+    .rodape span {
+        color: #fff;
+        align-self: center;
+    }
+
+    .rodape .icon-facebook-circled {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .rodape .icon-linkedin-circled {
+        font-size: 40px;
+        color: #fff;
+    }
+}

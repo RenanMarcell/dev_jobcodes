@@ -388,10 +388,17 @@
         background: #565656;
         color: #fff;
         list-style: none;
+        display: flex;
+        margin: 0;
+    }
+
+    .rodape li {
+        align-self: center;
     }
 
     .rodape span {
         color: #fff;
+        align-self: center;
     }
 
     .rodape .icon-facebook-circled {
@@ -402,13 +409,5 @@
     .rodape .icon-linkedin-circled {
         font-size: 40px;
         color: #fff;
-    }
-
-    .rodape .rede-social {
-        display: inherit;
-    }
-
-    .rodape .copy {
-        margin-top: 25px;
     }
 }
