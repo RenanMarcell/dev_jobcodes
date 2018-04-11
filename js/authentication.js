@@ -1,9 +1,12 @@
 const auth = firebase.auth();
-auth.onAuthStateChanged(firebaseUser=> {
-    if (!firebaseUser) {
-        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
-    }
-});
+
+function isLogged() {
+    auth.onAuthStateChanged(firebaseUser => {
+        if (!firebaseUser) {
+            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
+        }
+    });
+}
 
 $('#logout').click(function(){
     firebase.auth().signOut();
