@@ -101,7 +101,11 @@ $('#Form').submit(function() {
         } else {
             sessionStorage.setItem('Nivel', 'Senior');
         }
-        alert(sessionStorage.getItem('Nivel'));
+        db = firebase.database().ref('/Testes/').push({
+            Acertos: correct_answers,
+            email: 'oi'
+        });
+        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/result.html');
     }
     return false;
 });

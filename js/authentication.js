@@ -2,6 +2,7 @@ const auth = firebase.auth();
 
 function isLogged() {
     auth.onAuthStateChanged(firebaseUser => {
+        console.log(firebaseUser);
         if (!firebaseUser) {
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
         }
