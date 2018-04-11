@@ -1,0 +1,73 @@
+body {
+    background: url("../img/BG_2.jpg") no-repeat;
+}
+
+.nav {
+    display: flex;
+}
+
+.left-side-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 0;
+}
+
+#Logo {
+    height: 75px;
+}
+
+.right-side-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0;
+}
+
+.right-side-nav a {
+    font-size: 15px;
+    padding-right: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.middle-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.middle-text h2 {
+    color: white;
+}
+
+.reasons-div {
+    width: 100%;
+    padding: 15px 25% 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reasons-div p {
+    color: white;
+    text-align: center;
+}
+
+.button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button {
+    font-weight: bold;
+}
