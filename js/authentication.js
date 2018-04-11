@@ -1,10 +1,13 @@
 const auth = firebase.auth();
 auth.onAuthStateChanged(firebaseUser=> {
-    if (firebaseUser) {
-        console.log(firebaseUser);
-    } else {
-        console.log('Not logged in');
+    if (!firebaseUser) {
+        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
     }
+});
+
+$('#logout').click(function(){
+    firebase.auth().signOut();
+    window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
 });
 
 $('#login').click(function() {
@@ -13,7 +16,6 @@ $('#login').click(function() {
         const password = $('#PASSWORD')[0].value;
         const promise = auth.signInWithEmailAndPassword(email, password);
         promise.then(user => {
-            sessionStorage.setItem('Login', email);
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
         });
         promise.catch(e => handleErrors(e));
@@ -27,7 +29,6 @@ $('#register').click(function() {
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise.then(user => {
-            sessionStorage.setItem('Login', email);
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
         });
         promise.catch(e => handleErrors(e));
