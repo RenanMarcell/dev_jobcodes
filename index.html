@@ -53,7 +53,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
-        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
+        if (sessionStorage.getItem('Login') === null) {
+            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
+        }
     </script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="js/initialize_firebase.js"></script>
