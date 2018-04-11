@@ -19,7 +19,7 @@
         </div>
         <div class="right-side-nav">
             <a href="">Acesse sua conta</a>
-            <a href="">Sair</a>
+            <a id="logout" href="">Sair</a>
         </div>
     </div>
 
@@ -56,6 +56,10 @@
         if (sessionStorage.getItem('Login') === null) {
             window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
         }
+        $('#logout').click(function(){
+            firebase.auth().signOut();
+            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
+        });
     </script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="js/initialize_firebase.js"></script>

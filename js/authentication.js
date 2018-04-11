@@ -12,7 +12,10 @@ $('#login').click(function() {
         const email = $('#EMAIL')[0].value;
         const password = $('#PASSWORD')[0].value;
         const promise = auth.signInWithEmailAndPassword(email, password);
-        promise.then(user => window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html'));
+        promise.then(user => {
+            sessionStorage.setItem('Login', email);
+            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
+        });
         promise.catch(e => handleErrors(e));
     }
 });
@@ -23,7 +26,10 @@ $('#register').click(function() {
         const password = $('#PASSWORD')[0].value;
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
-        promise.then(user => window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html'));
+        promise.then(user => {
+            sessionStorage.setItem('Login', email);
+            window.location.replace('https://renanmarcell.github.io/dev_jobcodes/welcome.html')
+        });
         promise.catch(e => handleErrors(e));
 
     }
