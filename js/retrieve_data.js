@@ -29,7 +29,7 @@ var remaining_questions = [];
     setTimeout( () => {
         alert("Tempo esgotado");
         auth().signOut();
-        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
+        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/index.html');
     }, 600000);
     setTimeout( () => {
         alert("Resta 1 minuto");

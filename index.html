@@ -13,39 +13,31 @@
     <script src="js/analytics.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="left-side-nav">
-            <img src="img/Logo_Tks.png" alt="Logo JobCodes" id="Logo">
+    <div class="main-container">
+        <div class="first-half">
+            <div class="image-div">
+                <img src="img/Logo_Tks.png" alt="Logo da JobCodes">
+            </div>
         </div>
-        <div class="right-side-nav">
-            <a id="logout" href="">Sair</a>
+        <div class="second-half">
+            <h1>Avalie sua proficiência técnica com a Jobcodes</h1>
+            <h6>Entre com seu login e senha ou cadastre-se</h6>
+            <div id="inputs">
+                <input placeholder="Seu email" type="email" value="" name="EMAIL" class="email form-control" id="EMAIL">
+                <input placeholder="Sua senha" type="password" value="" name="SENHA" class="senha form-control" id="PASSWORD">
+            </div>
+            <div id="buttons">
+                <h6 id="error-message"></h6>
+                <button id="login" class="btn">Login</button>
+                <button id="register" class="btn">Cadastrar</button>
+            </div>
         </div>
+
+        <footer class="rodape justify-content-around list-inline">
+            <span class="copy">Copyright@ JobCodes 2018</span>
+        </footer>
     </div>
 
-    <div id="main">
-        <form id="Form">
-            <div class="form-group" id="final-question">
-                <h3>Quantos anos de experiência você possui? </h3>
-                <div class="form-check">
-                    <input type="radio" required class="form-check-input" name="pergunta1" id="last-question1" value="1">
-                    <label for="last-question1">Menos de 1 ano</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" required class="form-check-input" name="pergunta1" id="last-question2" value="2">
-                    <label for="last-question1">Entre 1 e 3 anos</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" required class="form-check-input" name="pergunta1" id="last-question3" value="3">
-                    <label for="last-question1">Entre 3 e 5 anos</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" required class="form-check-input" name="pergunta1" id="last-question4" value="4">
-                    <label for="last-question1">Acima de 5 anos de experiẽncia</label>
-                </div>
-            </div>
-            <button class="btn btn-primary" id="submit-button" type="submit">Continuar</button>
-        </form>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -53,8 +45,6 @@
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="js/initialize_firebase.js"></script>
-    <script src="js/authentication.js"></script>
-    <script src="js/retrieve_data.js"></script>
-    <script>isLogged()</script>
+    <script src="js/login.js"></script>
 </body>
 </html>
