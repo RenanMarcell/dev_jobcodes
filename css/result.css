@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 500px;
-    height: 100vh;
 }
 
 .nav {
@@ -58,7 +57,12 @@ body {
     background-color: #E5E5E5;
     margin: 20px 20px;
     border-radius: 15px;
-    padding: 40px 50px;
+    padding: 35px 50px 55px;
+}
+
+#answers-qtd {
+    color: blue;
+    font-size: 70px;
 }
 
 .level-result {
@@ -67,8 +71,21 @@ body {
 
 }
 
+#dev-level {
+    color: #5FA3CC;
+    font-weight: bold;
+}
 
+.thank-you {
+    margin-top: 15px;
+    background-color: #5FA3CC;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
 
+.thank-you h6 {
+    color: white;
+}
 
 .rodape {
     display: flex;

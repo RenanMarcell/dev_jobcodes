@@ -15,13 +15,13 @@ var nivel = '';
             snapChild.forEach(snapGrandChild => {
                 index++;
                 if (index === 1) {
-                    acertos = snapGrandChild._e.T;
+                    __acertos = snapGrandChild._e.T;
                 }
                 else if (index === 3) {
-                    nivel = snapGrandChild._e.T;
+                    __nivel = snapGrandChild._e.T;
                 }
                 else if (index === 2) {
-                    email = snapGrandChild._e.T;
+                    __email = snapGrandChild._e.T;
                 }
             });
             if (__email === email) {
@@ -29,5 +29,8 @@ var nivel = '';
                 nivel = __nivel;
             }
         });
+
+        document.querySelector('#answers-qtd').innerHTML = ((acertos).toString() + '/11');
+        document.querySelector('#dev-level').innerHTML = 'Nível ' + nivel;
     });
 })();
