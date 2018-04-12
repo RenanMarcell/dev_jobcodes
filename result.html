@@ -8,7 +8,7 @@
     <link rel="icon" href="img/Favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/result.css">
     <script src="js/hotjar.js"></script>
     <script src="js/analytics.js"></script>
 </head>
@@ -21,7 +21,27 @@
             <a href="">Acesse sua conta</a>
             <a id="logout" href="">Sair</a>
         </div>
+        <div class="center-nav">
+            <h2>Parabéns, você concluiu o nosso teste de proficiência!</h2>
+        </div>
     </div>
+
+    <div class="results">
+        <div class="rectangle-result">
+            <h3>Você acertou</h3>
+            <h1 id="answers-qtd"></h1>
+            <h3>Perguntas</h3>
+        </div>
+        <div class="level-result">
+            <h2>Você é um programador</h2>
+            <h5></h5>
+        </div>
+    </div>
+
+    <footer class="rodape justify-content-around list-inline">
+        <span class="copy">Copyright@ JobCodes 2018</span>
+    </footer>
+
 
 
 
@@ -34,6 +54,6 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="js/initialize_firebase.js"></script>
     <script src="js/authentication.js"></script>
-    <script>isLogged()</script>
+    <script src="js/retrieve_data_particular.js"></script>
 </body>
 </html>

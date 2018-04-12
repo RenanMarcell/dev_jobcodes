@@ -102,8 +102,9 @@ $('#Form').submit(function() {
             sessionStorage.setItem('Nivel', 'Senior');
         }
         db = firebase.database().ref('/Testes/').push({
-            Acertos: correct_answers,
-            email: 'oi'
+            acertos: correct_answers,
+            email: sessionStorage.getItem('email'),
+            nivel: sessionStorage.getItem('Nivel')
         });
         window.location.replace('https://renanmarcell.github.io/dev_jobcodes/result.html');
     }
