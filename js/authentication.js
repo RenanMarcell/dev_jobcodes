@@ -10,7 +10,7 @@ function isLogged() {
 }
 
 $('#logout').click(function(){
-    firebase.auth().signOut();
+    auth().signOut();
     window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
 });
 

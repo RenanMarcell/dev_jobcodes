@@ -28,8 +28,8 @@ var remaining_questions = [];
     });
     setTimeout( () => {
         alert("Tempo esgotado");
-        sessionStorage.setItem('Nivel', 'Esgotado');
-
+        auth().signOut();
+        window.location.replace('https://renanmarcell.github.io/dev_jobcodes/login.html');
     }, 600000);
     setTimeout( () => {
         alert("Resta 1 minuto");
@@ -82,29 +82,30 @@ $('#Form').submit(function() {
     } else {
         var years = r.shift();
         var correct_answers = count(r, _____a);
+        var nivel = '';
         if (years == 1 && correct_answers > 8 ) {
-            sessionStorage.setItem('Nivel', 'Junior');
+            nivel = 'Junior';
         } else if (years == 1) {
-            sessionStorage.setItem('Nivel', 'Estagiario');
+            nivel = 'Estagiario';
         } else if (years == 2 && correct_answers < 8) {
-            sessionStorage.setItem('Nivel', 'Junior');
+            nivel = 'Junior';
         } else if (years == 2 && correct_answers != 11) {
-            sessionStorage.setItem('Nivel', 'Pleno');
+            nivel = 'Pleno';
         } else if (years == 2) {
-            sessionStorage.setItem('Nivel', 'Senior');
+            nivel = 'Senior';
         } else if (years == 3 && correct_answers < 6) {
-            sessionStorage.setItem('Nivel', 'Pleno');
+            nivel = 'Pleno';
         } else if (years == 3) {
-            sessionStorage.setItem('Nivel', 'Senior');
+            nivel = 'Senior';
         } else if (years == 4 && correct_answers < 5) {
-            sessionStorage.setItem('Nivel', 'Pleno');
+            nivel = 'Pleno';
         } else {
-            sessionStorage.setItem('Nivel', 'Senior');
+            nivel = 'Senior';
         }
         db = firebase.database().ref('/Testes/').push({
             acertos: correct_answers,
             email: sessionStorage.getItem('email'),
-            nivel: sessionStorage.getItem('Nivel')
+            nivel: nivel
         });
         window.location.replace('https://renanmarcell.github.io/dev_jobcodes/result.html');
     }
