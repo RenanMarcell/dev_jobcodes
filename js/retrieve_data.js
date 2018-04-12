@@ -86,7 +86,7 @@ $('#Form').submit(function() {
         if (years == 1 && correct_answers > 8 ) {
             nivel = 'Junior';
         } else if (years == 1) {
-            nivel = 'Estagiario';
+            nivel = 'Iniciante';
         } else if (years == 2 && correct_answers < 8) {
             nivel = 'Junior';
         } else if (years == 2 && correct_answers != 11) {
